@@ -1,0 +1,159 @@
+/*region general*/
+.gform_body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.gform_page{
+    width: 100% !important;
+}
+/*form button container for slide2 animation*/
+.gform_page_footer{
+    position: relative !important;
+    top:0;
+}
+
+/*endregion*/
+/*region slide2-animation*/
+
+/*region slide2-ltr*/
+/*region next-go*/
+@keyframes s2body-next-go{
+    0%{transform:scale(1);}
+    40%{left: 0;}
+    50%{transform:scale(0.8);left:15%;opacity: 0.9;}
+    100%{transform:scale(0.8);left:80%;opacity: 0;}
+}
+@-webkit-keyframes s2body-next-go{
+
+    0%{transform:scale(1);}
+    40%{left: 0;}
+    50%{transform:scale(0.8);left:15%;opacity: 0.9;}
+    100%{transform:scale(0.8);left:80%;opacity: 0;}
+}
+.s2body-next-go{
+    animation:s2body-next-go 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*region prev-go*/
+@keyframes s2body-prev-go{
+    0%{transform:scale(1);}
+    40%{left: 0;}
+    50%{transform:scale(0.8);left:-15%;opacity: 0.9;}
+    100%{transform:scale(0.8);left:-80%;opacity: 0;}
+}
+@-webkit-keyframes s2body-prev-go{
+    0%{transform:scale(1);}
+    40%{left: 0;}
+    50%{transform:scale(0.8);left:-15%;opacity: 0.9;}
+    100%{transform:scale(0.8);left:-80%;opacity: 0;}
+}
+
+.s2body-prev-go{
+    animation:s2body-prev-go 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*region next-come*/
+@keyframes s2body-next-come{
+    0%{transform:scale(0.8) translateX(-80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+@-webkit-keyframes s2body-next-come{
+    0%{transform:scale(0.8) translateX(-80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+.s2body-next-come{
+    animation:s2body-next-come 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*region prev-come*/
+@keyframes s2body-prev-come{
+    0%{transform:scale(0.8) translateX(80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+@-webkit-keyframes s2body-prev-come{
+    0%{transform:scale(0.8) translateX(80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+
+.s2body-prev-come{
+    animation:s2body-prev-come 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*endregion*/
+/*region slide2-rtl*/
+/*region next-go*/
+@keyframes s2body-rtl-next-go{
+    0%{transform:scale(1);}
+    40%{right: 0;}
+    50%{transform:scale(0.8);right:15%;opacity: 0.9;}
+    100%{transform:scale(0.8);right:80%;opacity: 0;}
+}
+@-webkit-keyframes s2body-rtl-next-go{
+
+    0%{transform:scale(1);}
+    40%{left: 0;}
+    50%{transform:scale(0.8);right:15%;opacity: 0.9;}
+    100%{transform:scale(0.8);right:80%;opacity: 0;}
+}
+.s2body-rtl-next-go{
+    animation:s2body-rtl-next-go 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*region prev-go*/
+@keyframes s2body-rtl-prev-go{
+    0%{transform:scale(1);}
+    40%{right: 0;}
+    50%{transform:scale(0.8);right:-15%;opacity: 0.9;}
+    100%{transform:scale(0.8);right:-80%;opacity: 0;}
+}
+@-webkit-keyframes s2body-rtl-prev-go{
+    0%{transform:scale(1);}
+    40%{right: 0;}
+    50%{transform:scale(0.8);right:-15%;opacity: 0.9;}
+    100%{transform:scale(0.8);right:-80%;opacity: 0;}
+}
+
+.s2body-rtl-prev-go{
+    animation:s2body-rtl-prev-go 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*region next-come*/
+@keyframes s2body-rtl-next-come{
+    0%{transform:scale(0.8) translateX(80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+@-webkit-keyframes s2body-rtl-next-come{
+    0%{transform:scale(0.8) translateX(80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+.s2body-rtl-next-come{
+    animation:s2body-rtl-next-come 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*region prev-come*/
+@keyframes s2body-rtl-prev-come{
+    0%{transform:scale(0.8) translateX(-80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+@-webkit-keyframes s2body-rtl-prev-come{
+    0%{transform:scale(0.8) translateX(-80%);opacity: 0;}
+    50%{transform:scale(0.8) translateX(0);opacity: 0.9;}
+    100%{transform:scale(1) translateX(0);opacity: 1;}
+}
+
+.s2body-rtl-prev-come{
+    animation:s2body-rtl-prev-come 0.4s linear 1 forwards;
+}
+/*endregion*/
+/*endregion*/
+
+/*endregion*/
